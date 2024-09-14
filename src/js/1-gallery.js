@@ -98,24 +98,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
     captionDelay: 250,
 });
 
-console.log(lightbox);   
-
-gallery.addEventListener('click', onCardClick);
-
-function onCardClick(event) {
-    if (event.target === event.currentTarget) {
-        console.log('Click');
-    return
-    };
-
-    event.preventDefault();
-    if (!event.target.classList.contains('gallery-image')) {
-        return;
-    }
-
-    const currentEl = event.target.closest('.gallery-item');
-};
-
-
-
 
